@@ -41,7 +41,7 @@
                     <!-- logo de ;)  https://fontawesome.com/search aqui se descargan -->
                     <i class="fas fa-solid fa-code"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Nombre JJJ </div>
+                <div class="sidebar-brand-text mx-3">Nombre Del Proyecto </div>
             </a>
 
             <!-- Linea de separacion  -->
@@ -51,29 +51,59 @@
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
                 <a class="nav-link" href="../paginas/index.php">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <i class="fas fa-home"></i>
                     <span>Inicio</span></a>
             </li>
 
             <!-- Linea de separacion  -->
             <hr class="sidebar-divider my-0">
+
             <div class="sidebar-heading">
                 Empleado
             </div>
 
-            <!-- Nav Item - Pages Collapse Menu -->
+            <!--Menu Empleados -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
+                <a class="nav-link collapsed" href="../Empleados/index.php" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-solid fa-user"></i>
                     <span>Empleados</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Datos del Empleado:</h6>
-                        <a class="collapse-item" href="../Empleados/index.php">Agregar Empleado</a>
 
-                    </div>
-                </div>
+            </li>
+
+            <!-- Linea de separacion  -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Clientes -->
+            <div class="sidebar-heading">
+                Clientes
+            </div>
+
+            <!-- Menu de Clientes -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="../Clientes/index.php" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class=" fas fa-solid fa-users"></i>
+                    <span>Clientes</span>
+                </a>
+
+            </li>
+
+            <!-- Linea de separacion  -->
+            <hr class="sidebar-divider my-0">
+
+
+            <!-- Factura -->
+            <div class="sidebar-heading">
+                Facturas
+            </div>
+
+            <!-- Menu de Facturas -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="../Facturas/index.php" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-regular fa-handshake fa-beat"></i>
+                    <span>Facturas</span>
+                </a>
+
             </li>
 
             <!-- Linea de separacion  -->

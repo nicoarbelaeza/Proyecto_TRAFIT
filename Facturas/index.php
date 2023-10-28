@@ -169,9 +169,9 @@
 
                         <th scope="col">Numero de Factura</th>
                         <th scope="col">Fecha</th>
-                        <th scope="col">Empleado</th>
-                        <th scope="col">Cliente</th>
-                        <th scope="col">Producto</th>
+                        <th scope="col">Id y nombre empleado</th>
+                        <th scope="col">Id y nombre cliente</th>
+                        <th scope="col">Id y nombre producto</th>
                         <th scope="col">Detalle</th>
 
 

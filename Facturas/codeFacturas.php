@@ -10,8 +10,8 @@ include("../Conexion/conexion.php");
 $id_factura = (isset($_POST['id_factura'])) ? $_POST['id_factura'] : "";
 $id_empleado = (isset($_POST['id_empleado'])) ? $_POST['id_empleado'] : "";
 $id_cliente = (isset($_POST['id_cliente'])) ? $_POST['id_cliente'] : "";
+$id_productos = (isset($_POST['id_productos'])) ? $_POST['id_productos'] : "";
 $detalle = (isset($_POST['detalle'])) ? $_POST['detalle'] : "";
-
 
 
 
@@ -28,8 +28,8 @@ switch ($accion) {
                 */
 
                 $insercionFacturas = $conn->prepare(
-                "INSERT INTO factura ( id_empleado, id_cliente, detalle) 
-                VALUES ('$id_empleado','$id_cliente','$detalle')"
+                "INSERT INTO factura ( id_empleado, id_cliente, id_productos, detalle) 
+                VALUES ('$id_empleado','$id_cliente','$id_productos', '$detalle')"
              );
 
 
@@ -68,7 +68,7 @@ switch ($accion) {
 
 
 /* Consultamos todas las Facturas  */
-$consultaFacturas = $conn->prepare("SELECT * FROM factura");
+$consultaFacturas = $conn->prepare("SELECT * FROM factura INNER JOIN clientes on factura.id_cliente = clientes.id_cliente INNER JOIN empleados on factura.id_empleado = empleados.id INNER JOIN productos on factura.id_productos = productos.id_productos;");
 $consultaFacturas->execute();
 $listaFacturas = $consultaFacturas->get_result();
 
@@ -85,6 +85,11 @@ $listaClientes = $consultaClientes->get_result();
 $consultaEmpleados = $conn->prepare("SELECT * FROM empleados");
 $consultaEmpleados->execute();
 $listaEmpleados = $consultaEmpleados->get_result();
+
+/* Consultamos todas los productos */
+$consultaProductos = $conn->prepare("SELECT * FROM productos");
+$consultaProductos->execute();
+$listaProductos = $consultaProductos->get_result();
 
 //Al final de todas las consultas se cierra la conexion
 $conn->close();

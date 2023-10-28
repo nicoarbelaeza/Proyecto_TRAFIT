@@ -32,7 +32,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav bg-gradient-danger sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../paginas/index.php">
@@ -41,7 +41,7 @@
                     <!-- logo de ;)  https://fontawesome.com/search aqui se descargan -->
                     <i class="fas fa-solid fa-code"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Nombre Del Proyecto </div>
+                <div class="sidebar-brand-text mx-3">TRAFIT </div>
             </a>
 
             <!-- Linea de separacion  -->
@@ -110,6 +110,24 @@
             <hr class="sidebar-divider my-0">
 
 
+                        <!-- Productos -->
+                        <div class="sidebar-heading">
+                Productos
+            </div>
+
+            <!-- Menu de Productos -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="../Productos/index.php" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-regular fa-handshake fa-beat"></i>
+                    <span>Productos</span>
+                </a>
+
+            </li>
+
+            <!-- Linea de separacion  -->
+            <hr class="sidebar-divider my-0">
+
+
         </ul>
         <!-- Final del Menu Izquierdo -->
 
@@ -135,7 +153,7 @@
                         <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..." aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
+                                <button class="btn btn-danger" type="button">
                                     <i class="fas fa-search fa-sm"></i>
                                 </button>
                             </div>
